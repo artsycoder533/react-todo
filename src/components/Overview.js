@@ -2,14 +2,11 @@ import React from "react";
 import { FiEdit3 } from "react-icons/fi";
 import { FiTrash2 } from "react-icons/fi";
 import { FiCheck } from "react-icons/fi";
-import { FiCheckCircle } from "react-icons/fi";
 
 const Overview = (props) => {
     const { tasks, count, deleteTask, allowEdit, handleEditChange, replaceTask} = props;
 
-    //if isEditable is true rerender and swap out span for an input with value of the task that was clicked to be edited
     const showInput = (isEditable, message, id) => {
-        // console.log(task);
         if (isEditable === true) {
             return (
                 <>
